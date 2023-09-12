@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        header {
+            background-color: #666;
+            padding: 30px;
+            font-size: 35px;
+            color: white;
+        }
+
+        
+        nav {
+            width: 100%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        .div{
+            display: flex;
+            min-height: 150px;
+            align-items: center;
+            background: #a7a6a6;
+            border: 1px solid black;
+        }
+
+        .div div, .div aside{
+            width: 50%;
+            height: auto;
+        }
+        div section, div article{
+            height: 50%;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>&lt;Header&gt;</h2>
+    </header>
+
+    <nav>
+        <h2>&lt;NAV&gt;</h2>
+    </nav>
+
+    <div class="div">
+        <div>
+            <section>
+                <h2>&lt;SECTION&gt;</h2>
+            </section>
+            <article>
+                <h2>&lt;ARTICLE&gt;</h2>
+            </article>
+        </div>
+        <aside>
+            <h2>&lt;ASIDE&gt;</h2>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&lt;FOOTER&gt;</p>
+    </footer>
+
+</body>
+</html>
+
